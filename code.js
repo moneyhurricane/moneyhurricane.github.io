@@ -308,7 +308,7 @@ if (level1run === true) {
       } else if (jumpLeft === true) {
         characterMotions.addImage(characterJumpLeft);
         characterMotions.setVelocity(0,-3);
-      }.
+      }
    } else if (keyDown(SPACE)) {
      characterMotions.addImage(characterAttack);
    } else {
