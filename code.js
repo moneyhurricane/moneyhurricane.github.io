@@ -34,7 +34,7 @@ var healthBar;
 var healthBar2;
 
 function preload() {
-  miniMountains = loadImage('images/miniMountains.png');
+  miniMountains = loadImage("images/miniMountains.png");
   mapSuburbia = loadImage('images/suburbiaMap.png');
   floor1 = loadImage('images/floor.png');
   facebookLogo = loadImage('images/facebookLogo.png');
