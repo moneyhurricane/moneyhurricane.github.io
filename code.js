@@ -175,7 +175,7 @@ barbara.scale = 0.15;
 barbara.visible = false;
 //character motions
 characterMotions = createSprite(50,300);
-characterMotions.addImage(characterRightStand);
+characterMotions.addImage(characterStand);
 characterMotions.scale = 0.5;
 characterMotions.visible = false;
 //health bar
