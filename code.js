@@ -59,7 +59,7 @@ function preload() {
   characterRunLeft = loadAnimation('https://i.ibb.co/fY2qjr1/Character-Run-Frame1.png', 'https://i.ibb.co/g9YBRRH/Character-Run-Frame2.png');
   characterRunRight = loadAnimation('https://i.ibb.co/Xt4yxsr/Character-Left-Run-Frame1.png', 'https://i.ibb.co/0VwJ4Y3/Character-Left-Run-Frame2.png');
   characterJumpRight = loadImage('https://i.ibb.co/QcBD5rs/Character-Jump.png');
-  characterJumpLeft = loadImage('https://i.ibb.co/g9YBRRH/Character-Run-Frame2.png');
+  characterJumpLeft = loadImage('https://i.ibb.co/6mDW624/Character-Left-Jump.png');
   healthBar = loadImage('https://i.ibb.co/RjCGB91/Full-Health-Bar.png');
   healthBar2 = loadImage('https://i.ibb.co/RjCGB91/Full-Health-Bar.png');
 }
@@ -360,6 +360,3 @@ function healthBarMovement() {
   healthBar2.position.x = barbara.position.x;
   healthBar2.position.y = barbara.position.y - 50;
 }
-
-characterMotions.debug = true;
-barbara.debug = true;
