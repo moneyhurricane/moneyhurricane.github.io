@@ -55,7 +55,7 @@ function preload() {
   snowPlatform = loadImage('https://i.ibb.co/Zm60dBC/Snow-Platform.png');
   snowPlatform2 = loadImage('https://i.ibb.co/Zm60dBC/Snow-Platform.png');
   barbara = loadImage('https://i.ibb.co/tbBrf9B/barbara.png');
-  characterStand = loadImage('ihttps://i.ibb.co/c2jrkbQ/character-Stand-Right.png');
+  characterStand = loadImage('https://i.ibb.co/c2jrkbQ/character-Stand-Right.png');
   characterRunLeft = loadAnimation('https://i.ibb.co/fY2qjr1/Character-Run-Frame1.png', 'https://i.ibb.co/g9YBRRH/Character-Run-Frame2.png');
   characterRunRight = loadAnimation('https://i.ibb.co/Xt4yxsr/Character-Left-Run-Frame1.png', 'https://i.ibb.co/0VwJ4Y3/Character-Left-Run-Frame2.png');
   characterJumpRight = loadImage('https://i.ibb.co/QcBD5rs/Character-Jump.png');
