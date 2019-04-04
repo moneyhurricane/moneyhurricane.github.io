@@ -174,16 +174,16 @@ barbara.addImage(barbara);
 barbara.scale = 0.15;
 barbara.visible = false;
 //character motions
-characterMotions.createSprite(50,300);
+characterMotions = createSprite(50,300);
 characterMotions.addImage(characterRightStand);
 characterMotions.scale = 0.5;
 characterMotions.visible = false;
 //health bar
-var healthBar = createSprite(50,300);
+healthBar = createSprite(50,300);
 healthBar.scale = 0.25;
 healthBar.addImage(fullHealthBar);
 healthBar.visible = false;
-var healthBar2 = createSprite(50,300);
+healthBar2 = createSprite(50,300);
 healthBar2.scale = 0.25;
 healthBar2.addImage(fullHealthBar);
 healthBar2.visible = false;
