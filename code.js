@@ -60,8 +60,7 @@ function preload() {
   characterRunRight = loadAnimation('https://i.ibb.co/Xt4yxsr/Character-Left-Run-Frame1.png', 'https://i.ibb.co/0VwJ4Y3/Character-Left-Run-Frame2.png');
   characterJumpRight = loadImage('https://i.ibb.co/QcBD5rs/Character-Jump.png');
   characterJumpLeft = loadImage('https://i.ibb.co/6mDW624/Character-Left-Jump.png');
-  healthBar = loadImage('https://i.ibb.co/RjCGB91/Full-Health-Bar.png');
-  healthBar2 = loadImage('https://i.ibb.co/RjCGB91/Full-Health-Bar.png');
+  fullHealthBar = loadImage('https://i.ibb.co/RjCGB91/Full-Health-Bar.png');
 }
 
 function setup() {
