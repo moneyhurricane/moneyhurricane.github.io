@@ -27,7 +27,11 @@ var houseImg;
 var snowPlatformImg;
 var snowPlatform2Img;
 var barbaraImg;
-var characterMotionsImg;
+var characterStandImg;
+var characterRunLeftAnim;
+var characterRunRightAnim;
+var characterJumpRightImg;
+var characterJumpLeftImg;
 var healthBarImg;
 var healthBar2Img;
 //Sprite Variables
@@ -77,8 +81,8 @@ function preload() {
   snowPlatform2Img = loadImage('https://i.ibb.co/Zm60dBC/Snow-Platform.png');
   barbaraImg = loadImage('https://i.ibb.co/tbBrf9B/barbara.png');
   characterStandImg = loadImage('https://i.ibb.co/c2jrkbQ/character-Stand-Right.png');
-  characterRunLeftImg = loadAnimation('https://i.ibb.co/fY2qjr1/Character-Run-Frame1.png', 'https://i.ibb.co/g9YBRRH/Character-Run-Frame2.png');
-  characterRunRightImg = loadAnimation('https://i.ibb.co/Xt4yxsr/Character-Left-Run-Frame1.png', 'https://i.ibb.co/0VwJ4Y3/Character-Left-Run-Frame2.png');
+  characterRunLeftAnim = loadAnimation('https://i.ibb.co/fY2qjr1/Character-Run-Frame1.png', 'https://i.ibb.co/g9YBRRH/Character-Run-Frame2.png');
+  characterRunRightAnim = loadAnimation('https://i.ibb.co/Xt4yxsr/Character-Left-Run-Frame1.png', 'https://i.ibb.co/0VwJ4Y3/Character-Left-Run-Frame2.png');
   characterJumpRightImg = loadImage('https://i.ibb.co/QcBD5rs/Character-Jump.png');
   characterJumpLeftImg = loadImage('https://i.ibb.co/6mDW624/Character-Left-Jump.png');
   fullHealthBarImg = loadImage('https://i.ibb.co/RjCGB91/Full-Health-Bar.png');
@@ -248,7 +252,7 @@ function checkTitleLoc() {
 }
 
 function gameBegin() {
-  if (startButton.mouseIsPressed) {
+  if (startButton.mouseIsPressed = true) {
      stopKaren.remove();
      facebookLogo.remove();
      startButton.remove();
@@ -258,7 +262,7 @@ function gameBegin() {
 }
 
 function gameDescription() {
-  if (startButton2.mouseIsPressed) {
+  if (startButton2.mouseIsPressed = true) {
     welcomeText.remove();
     gameDesc.visible = true;
     startButton2.remove();
@@ -267,7 +271,7 @@ function gameDescription() {
 }
 
 function gameInstructions() {
-  if (startButton3.mouseIsPressed) {
+  if (startButton3.mouseIsPressed = true) {
     gameDesc.remove();
     startButton3.remove();
     gameInstruct.visible = true;
@@ -278,7 +282,7 @@ function gameInstructions() {
 }
 
 function gameInitiate() {
-  if (startButton4.mouseIsPressed) {
+  if (startButton4.mouseIsPressed = true) {
     floor1.visible = false;
     startButton4.remove();
     gameInstruct.remove();
@@ -293,7 +297,7 @@ function gameInitiate() {
 }
 
 function level1() {
-  if (minivan.mouseIsPressed) {
+  if (minivan.mouseIsPressed = true) {
     mapSuburbia.remove();
     minivan.remove();
     liveLaughLove.remove();
@@ -314,28 +318,28 @@ function level1() {
 function playerControl() {
 //potential improvements possible in the future
 if (level1run === true) {
-   if (keyDown(RIGHT)) {
-     characterMotions.addImage(characterRun);
+    if (keyCode == RIGHT_ARROW) {
+     characterMotions.addImage(characterRunRightAnim);
      characterMotions.setVelocity(3,0);
      jumpRight = true;
-   } else if (keyDown(LEFT)) {
-     characterMotions.addImage(characterRRun);
+    } else if (keyCode == LEFT_ARROW) {
+     characterMotions.addImage(characterRunLeftAnim);
      characterMotions.setVelocity(-3,0)
      jumpLeft = true;
-   } else if (keyDown(UP)) {
+    } else if (keyCode == UP_ARROW) {
       if (jumpRight === true) {
-        characterMotions.addImage(characterJumpRight);
+        characterMotions.addImage(characterJumpRightImg);
         characterMotions.setVelocity(0,-3);
-      } else if (jumpLeft === true) {
-        characterMotions.addImage(characterJumpLeft);
+    } else if (jumpLeft === true) {
+        characterMotions.addImage(characterJumpLeftImg);
         characterMotions.setVelocity(0,-3);
-      }
-   } else if (keyDown(SPACE)) {
-     characterMotions.addImage(characterAttack);
-   } else {
+    } else if (keyCode == SPACE) {
+     characterMotions.addImage(characterAttackImg);
+    } else {
      characterMotions.setVelocity(0,0);
    }
   }
+}
 }
 
 function checkPlatformLoc() {
