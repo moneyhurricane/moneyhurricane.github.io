@@ -1,4 +1,4 @@
-var level1run = false;
+var level1run = true;
 var level1done = false;
 jumpLeft = false;
 jumpRight = false;
